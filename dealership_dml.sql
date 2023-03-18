@@ -4,13 +4,17 @@ INSERT INTO customer(
     last_name,
     email    
 ) VALUES (
-    1,
-    'Sonia',
-    'Tina',
-    'Madison@mail.com'
+   2,
+    'Madison',
+    'Tyson',
+    'Madi@mail.com'
 )
+
+ALTER TABLE customer
+ADD first_name VARCHAR(50)
+
 select * from customer;
-DROP TAble customer
+
 
 INSERT INTO serviceticket(
     service_id,
@@ -21,13 +25,13 @@ INSERT INTO serviceticket(
     mechanic_id,
     cost
 ) VALUES (
-    1,
-    '8/29/2011 11:16:12 AM',
-    3,
     2,
-    'sonia',
-    1,
-    '25.99'
+    '8/29/2011 12:16:12 AM',
+    36,
+    28,
+    'jean',
+    12,
+    '26.99'
 )
 select * from serviceticket;
 
@@ -36,9 +40,9 @@ INSERT INTO mechanic(
     first_name,
     last_name
 ) VALUES (
-    36,
-    'Tina',
-    'Madison'
+    32,
+    'alina',
+    'Paddy'
 )
 select * from mechanic;
 
@@ -48,10 +52,10 @@ INSERT INTO invoice(
     i_date,
     customer_id
 ) VALUES (
-    5,
-    6,
-    '8/29/2011 11:16:12 AM',
-     8
+    52,
+    26,
+    '8/29/2011 11:26:12 AM',
+     82
 )
 select * from invoice;
 
@@ -63,12 +67,12 @@ INSERT INTO car(
     price,
     salesperson_id
 ) VALUES (
-    1,
-    '3.99',
-    'Madison@mail.com',
-     3,
-    '9.99',
-    8
+    12,
+    '34.99',
+    'Tyson@mail.com',
+     43,
+    '19.99',
+    85
 )
 select * from car;
 
@@ -77,8 +81,8 @@ INSERT INTO salesperson(
      first_name,
     last_name
  ) VALUES (
-    9,
-    'Tina',
-    'Madison@mail.com'
+    19,
+    'Jessica',
+    'Chris@mail.com'
 )
 select * from salesperson;

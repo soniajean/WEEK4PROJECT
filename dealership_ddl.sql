@@ -4,6 +4,8 @@ CREATE TABLE customer(
     last_name VARCHAR(50),
     email VARCHAR(200)
 )
+
+
 select * from customer;
 
 CREATE TABLE serviceticket(
